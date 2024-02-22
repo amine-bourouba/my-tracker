@@ -5,9 +5,10 @@
   </button>
   <div v-else
     class="h-[66px] w-[40rem] | bg-indigo-950 | rounded-full | flex justify-start items-center animate-slide-in">
+    <!-- Close btn -->
+
     <div class="flex justify-start | bg-indigo-600 | h-[66px] | rounded-l-full | pl-3"
       :class="toggleNextStep ? 'w-[9.25rem]' : 'w-[10.25rem]'">
-      <!-- Close btn + Step -->
       <button class="bg-indigo-900 | rounded-full | h-10 w-[2.5rem] mt-3 | text-white" type="button" @click="close">
         <x-mark-icon aria-hidden="true" />
       </button>
@@ -17,6 +18,8 @@
           :class="toggleNextStep ? 'left-[4rem]' : 'left-[5.5rem]'">{{ toggleNextStep ? '2' : '1' }}</span>
       </div>
     </div>
+    <!-- STEPS -->
+
     <div class="h-[66px]" :class="toggleNextStep ? 'w-[27.5rem]' : 'w-[26rem]'">
       <div v-if="!toggleNextStep" class="pl-4 grid content-between gap-[2px]">
         <!-- Input - STEP 1 -->
@@ -63,6 +66,7 @@ const toggleNextStep = ref(false);
 const close = () => {
   toggleNew.value = false
   toggleNextStep.value = false
+  taskStore.$reset()
 }
 </script>
 <style scoped>
