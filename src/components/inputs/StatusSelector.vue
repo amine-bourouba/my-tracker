@@ -50,7 +50,7 @@ import { useTasksStore } from '../../stores/TaskStore';
 const taskStore = useTasksStore()
 
 const statuses = [
-  { name: 'None', priority: 'neutral' },
+  { name: 'None', priority: 'none' },
   { name: 'High', priority: 'low' },
   { name: 'Medium', priority: 'medium' },
   { name: 'Low', priority: 'high' },

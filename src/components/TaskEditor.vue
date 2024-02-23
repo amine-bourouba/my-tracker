@@ -39,7 +39,7 @@
           @click="toggleNextStep = !toggleNextStep" />
         <!-- Next/Add step btn -->
         <button class="bg-white | rounded-full | h-10 w-[2.5rem] mr-3 | text-indigo-900" type="button"
-          @click="taskStore.$reset()">
+          @click="taskStore.addTask">
           <plus-icon aria-hidden="true" />
         </button>
       </div>

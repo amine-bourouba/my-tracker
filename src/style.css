@@ -4,7 +4,7 @@
 
 /* task priority colors */
 
-.neutral {
+.none {
   @apply text-neutral-400 !important;
 }
 
@@ -18,4 +18,36 @@
 
 .high {
   @apply text-red-400 !important;
+}
+
+.bg-none {
+  @apply bg-neutral-400/50 !important;
+}
+
+.bg-low {
+  @apply bg-green-400/50 !important;
+}
+
+.bg-medium {
+  @apply bg-yellow-400/50 !important;
+}
+
+.bg-high {
+  @apply bg-red-400/50 !important;
+}
+
+.border-r-none {
+  @apply border-r-4 border-r-blue-200 !important;
+}
+
+.border-r-low {
+  @apply border-r-4 border-r-green-500 !important;
+}
+
+.border-r-medium {
+  @apply border-r-4 border-r-yellow-500 !important;
+}
+
+.border-r-high {
+  @apply border-r-4 border-r-red-500 !important;
 }
